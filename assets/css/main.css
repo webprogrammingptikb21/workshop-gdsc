@@ -1,1 +1,18 @@
-/*# sourceMappingURL=main.css.map */
+/* Error: Top-level selectors may not contain the parent selector "&".
+ *    ,
+ * 17 | &__logo {
+ *    | ^^^^^^^^
+ *    '
+ *   assets\scss\layout\_header.scss 17:1  @import
+ *   assets\scss\main.scss 2:9             root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Top-level selectors may not contain the parent selector "&".\a    \2577 \a 17 \2502  &__logo {\d\a    \2502  ^^^^^^^^\a    \2575 \a   assets\\scss\\layout\\_header.scss 17:1  @import\a   assets\\scss\\main.scss 2:9             root stylesheet';
+}

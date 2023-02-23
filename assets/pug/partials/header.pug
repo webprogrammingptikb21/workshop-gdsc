@@ -1,6 +1,10 @@
 header.header 
     nav.nav 
-     a.nav__logo(href="") Airpods
-     ul.nav__list
-     each link in links 
-        li.nav__item=link
+    a.nav__logo(href="") Airpods
+    div.nav__menu
+        ul.nav__list
+            each link in links 
+                li.nav__item=link
+                    a.nav__link(href="#")=link
+    button.nav__btn belli
+    
